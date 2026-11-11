@@ -1,0 +1,423 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+body {
+
+  margin: 0;
+
+  background: #f8f8f1;
+
+  color: #263b2d;
+
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+.app {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 0 24px;
+
+}
+
+.topo {
+
+  height: 82px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #e6e9df;
+
+}
+
+.marca {
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #285b3b;
+
+}
+
+.marca span {
+
+  color: #b18b52;
+
+}
+
+.topo select {
+
+  padding: 10px;
+
+  border: 1px solid #dce3d8;
+
+  border-radius: 20px;
+
+  background: white;
+
+  color: #285b3b;
+
+}
+
+.hero {
+
+  background: #e7eddf;
+
+  border-radius: 24px;
+
+  margin-top: 28px;
+
+  padding: 75px 8%;
+
+}
+
+.selo, .hero .selo {
+
+  color: #8b9d65;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+h1, h2 {
+
+  font-family: 'Playfair Display', Georgia, serif;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(42px, 7vw, 72px);
+
+  line-height: 1.1;
+
+  margin: 20px 0;
+
+  color: #254b32;
+
+}
+
+.hero h1 span {
+
+  color: #9b8758;
+
+}
+
+.hero p {
+
+  max-width: 480px;
+
+  line-height: 1.8;
+
+  color: #5b6a5d;
+
+}
+
+.botao {
+
+  display: inline-block;
+
+  background: #285b3b;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 15px 24px;
+
+  border-radius: 30px;
+
+  margin-top: 18px;
+
+}
+
+.objetivos, .receitas {
+
+  padding: 48px 0 10px;
+
+}
+
+h2 {
+
+  font-size: 32px;
+
+}
+
+.filtros {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+.filtros button, .favorito {
+
+  background: white;
+
+  color: #31583d;
+
+  border: 1px solid #dce3d8;
+
+  border-radius: 24px;
+
+  padding: 11px 19px;
+
+  cursor: pointer;
+
+}
+
+.filtros button.ativo {
+
+  background: #285b3b;
+
+  color: white;
+
+}
+
+.titulo {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+.titulo h2 {
+
+  margin-top: 10px;
+
+}
+
+.pesquisa {
+
+  width: 100%;
+
+  padding: 17px;
+
+  border: 1px solid #dce3d8;
+
+  border-radius: 14px;
+
+  margin: 15px 0 25px;
+
+  font: inherit;
+
+}
+
+.grelha {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+}
+
+.cartao {
+
+  background: white;
+
+  border: 1px solid #edf0e9;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+}
+
+.foto {
+
+  min-height: 145px;
+
+  background: #e9efe2;
+
+  display: grid;
+
+  place-items: center;
+
+  font-size: 76px;
+
+}
+
+.cartao-corpo {
+
+  padding: 20px;
+
+}
+
+.categoria {
+
+  color: #8b9d65;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+}
+
+.cartao h3 {
+
+  font-family: 'Playfair Display', Georgia, serif;
+
+  font-size: 21px;
+
+}
+
+.cartao p {
+
+  color: #68756a;
+
+  line-height: 1.5;
+
+  min-height: 44px;
+
+}
+
+.nutricao {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  font-size: 12px;
+
+  margin: 18px 0;
+
+  color: #46664c;
+
+}
+
+.favorito {
+
+  width: 100%;
+
+}
+
+.destaque {
+
+  background: #285b3b;
+
+  color: white;
+
+  border-radius: 22px;
+
+  margin: 65px 0 35px;
+
+  padding: 55px 8%;
+
+}
+
+.destaque span {
+
+  color: #d5dfb9;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+}
+
+.destaque h2 {
+
+  font-size: 38px;
+
+}
+
+.destaque p {
+
+  max-width: 500px;
+
+  line-height: 1.8;
+
+  color: #e2eadf;
+
+}
+
+footer {
+
+  text-align: center;
+
+  padding: 30px 10px;
+
+  color: #788578;
+
+  font-size: 13px;
+
+}
+
+@media (max-width: 800px) {
+
+  .grelha {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .app {
+
+    padding: 0 15px;
+
+  }
+
+  .hero {
+
+    padding: 48px 25px;
+
+  }
+
+  .grelha {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .titulo {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+  }
+
+}
